@@ -19,6 +19,8 @@
 		EC0E62AE28DB4289003051A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62AD28DB4289003051A7 /* FirebaseAuth */; };
 		EC0E62B028DB4289003051A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62AF28DB4289003051A7 /* FirebaseFirestore */; };
 		EC0E62B228DB4289003051A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62B128DB4289003051A7 /* FirebaseStorage */; };
+		EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */; };
+		EC0E62BC28DB542F003051A7 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BB28DB542F003051A7 /* 1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		EC0E629328DB051E003051A7 /* Swift_App_Duciel_PicartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_App_Duciel_PicartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0E629728DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITests.swift; sourceTree = "<group>"; };
 		EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC0E62BB28DB542F003051A7 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1024.png; path = ../../../../Downloads/AppIcons/Assets.xcassets/AppIcon.appiconset/1024.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		EC0E627528DB051E003051A7 /* Swift_App_Duciel_Picart */ = {
 			isa = PBXGroup;
 			children = (
+				EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */,
 				EC0E627628DB051E003051A7 /* AppDelegate.swift */,
 				EC0E627828DB051E003051A7 /* SceneDelegate.swift */,
 				EC0E627A28DB051E003051A7 /* MainController.swift */,
@@ -112,6 +117,7 @@
 				EC0E627F28DB051E003051A7 /* Assets.xcassets */,
 				EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */,
 				EC0E628428DB051E003051A7 /* Info.plist */,
+				EC0E62BB28DB542F003051A7 /* 1024.png */,
 			);
 			path = Swift_App_Duciel_Picart;
 			sourceTree = "<group>";
@@ -246,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0E628328DB051E003051A7 /* LaunchScreen.storyboard in Resources */,
+				EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */,
+				EC0E62BC28DB542F003051A7 /* 1024.png in Resources */,
 				EC0E628028DB051E003051A7 /* Assets.xcassets in Resources */,
 				EC0E627E28DB051E003051A7 /* Main.storyboard in Resources */,
 			);
@@ -449,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -463,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-Picart";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.swift-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -490,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-Picart";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.swift-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
