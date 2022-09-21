@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E627628DB051E003051A7 /* AppDelegate.swift */; };
+		EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E627828DB051E003051A7 /* SceneDelegate.swift */; };
+		EC0E627B28DB051E003051A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E627A28DB051E003051A7 /* ViewController.swift */; };
+		EC0E627E28DB051E003051A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0E627C28DB051E003051A7 /* Main.storyboard */; };
+		EC0E628028DB051E003051A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0E627F28DB051E003051A7 /* Assets.xcassets */; };
+		EC0E628328DB051E003051A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */; };
+		EC0E628E28DB051E003051A7 /* Swift_App_Duciel_PicartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E628D28DB051E003051A7 /* Swift_App_Duciel_PicartTests.swift */; };
+		EC0E629828DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E629728DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift */; };
+		EC0E629A28DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC0E628A28DB051E003051A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0E626B28DB051E003051A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0E627228DB051E003051A7;
+			remoteInfo = Swift_App_Duciel_Picart;
+		};
+		EC0E629428DB051E003051A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0E626B28DB051E003051A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0E627228DB051E003051A7;
+			remoteInfo = Swift_App_Duciel_Picart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC0E627328DB051E003051A7 /* Swift_App_Duciel_Picart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_App_Duciel_Picart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0E627628DB051E003051A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC0E627828DB051E003051A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC0E627A28DB051E003051A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC0E627D28DB051E003051A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC0E627F28DB051E003051A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC0E628228DB051E003051A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC0E628428DB051E003051A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0E628928DB051E003051A7 /* Swift_App_Duciel_PicartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_App_Duciel_PicartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0E628D28DB051E003051A7 /* Swift_App_Duciel_PicartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartTests.swift; sourceTree = "<group>"; };
+		EC0E629328DB051E003051A7 /* Swift_App_Duciel_PicartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_App_Duciel_PicartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0E629728DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITests.swift; sourceTree = "<group>"; };
+		EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC0E627028DB051E003051A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E628628DB051E003051A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E629028DB051E003051A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC0E626A28DB051E003051A7 = {
+			isa = PBXGroup;
+			children = (
+				EC0E627528DB051E003051A7 /* Swift_App_Duciel_Picart */,
+				EC0E628C28DB051E003051A7 /* Swift_App_Duciel_PicartTests */,
+				EC0E629628DB051E003051A7 /* Swift_App_Duciel_PicartUITests */,
+				EC0E627428DB051E003051A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC0E627428DB051E003051A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E627328DB051E003051A7 /* Swift_App_Duciel_Picart.app */,
+				EC0E628928DB051E003051A7 /* Swift_App_Duciel_PicartTests.xctest */,
+				EC0E629328DB051E003051A7 /* Swift_App_Duciel_PicartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC0E627528DB051E003051A7 /* Swift_App_Duciel_Picart */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E627628DB051E003051A7 /* AppDelegate.swift */,
+				EC0E627828DB051E003051A7 /* SceneDelegate.swift */,
+				EC0E627A28DB051E003051A7 /* ViewController.swift */,
+				EC0E627C28DB051E003051A7 /* Main.storyboard */,
+				EC0E627F28DB051E003051A7 /* Assets.xcassets */,
+				EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */,
+				EC0E628428DB051E003051A7 /* Info.plist */,
+			);
+			path = Swift_App_Duciel_Picart;
+			sourceTree = "<group>";
+		};
+		EC0E628C28DB051E003051A7 /* Swift_App_Duciel_PicartTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E628D28DB051E003051A7 /* Swift_App_Duciel_PicartTests.swift */,
+			);
+			path = Swift_App_Duciel_PicartTests;
+			sourceTree = "<group>";
+		};
+		EC0E629628DB051E003051A7 /* Swift_App_Duciel_PicartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E629728DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift */,
+				EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */,
+			);
+			path = Swift_App_Duciel_PicartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC0E627228DB051E003051A7 /* Swift_App_Duciel_Picart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0E629D28DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_Picart" */;
+			buildPhases = (
+				EC0E626F28DB051E003051A7 /* Sources */,
+				EC0E627028DB051E003051A7 /* Frameworks */,
+				EC0E627128DB051E003051A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_App_Duciel_Picart;
+			productName = Swift_App_Duciel_Picart;
+			productReference = EC0E627328DB051E003051A7 /* Swift_App_Duciel_Picart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC0E628828DB051E003051A7 /* Swift_App_Duciel_PicartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0E62A028DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_PicartTests" */;
+			buildPhases = (
+				EC0E628528DB051E003051A7 /* Sources */,
+				EC0E628628DB051E003051A7 /* Frameworks */,
+				EC0E628728DB051E003051A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0E628B28DB051E003051A7 /* PBXTargetDependency */,
+			);
+			name = Swift_App_Duciel_PicartTests;
+			productName = Swift_App_Duciel_PicartTests;
+			productReference = EC0E628928DB051E003051A7 /* Swift_App_Duciel_PicartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC0E629228DB051E003051A7 /* Swift_App_Duciel_PicartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0E62A328DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_PicartUITests" */;
+			buildPhases = (
+				EC0E628F28DB051E003051A7 /* Sources */,
+				EC0E629028DB051E003051A7 /* Frameworks */,
+				EC0E629128DB051E003051A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0E629528DB051E003051A7 /* PBXTargetDependency */,
+			);
+			name = Swift_App_Duciel_PicartUITests;
+			productName = Swift_App_Duciel_PicartUITests;
+			productReference = EC0E629328DB051E003051A7 /* Swift_App_Duciel_PicartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC0E626B28DB051E003051A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					EC0E627228DB051E003051A7 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					EC0E628828DB051E003051A7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = EC0E627228DB051E003051A7;
+					};
+					EC0E629228DB051E003051A7 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = EC0E627228DB051E003051A7;
+					};
+				};
+			};
+			buildConfigurationList = EC0E626E28DB051E003051A7 /* Build configuration list for PBXProject "Swift_App_Duciel_Picart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC0E626A28DB051E003051A7;
+			productRefGroup = EC0E627428DB051E003051A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC0E627228DB051E003051A7 /* Swift_App_Duciel_Picart */,
+				EC0E628828DB051E003051A7 /* Swift_App_Duciel_PicartTests */,
+				EC0E629228DB051E003051A7 /* Swift_App_Duciel_PicartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC0E627128DB051E003051A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E628328DB051E003051A7 /* LaunchScreen.storyboard in Resources */,
+				EC0E628028DB051E003051A7 /* Assets.xcassets in Resources */,
+				EC0E627E28DB051E003051A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E628728DB051E003051A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E629128DB051E003051A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC0E626F28DB051E003051A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E627B28DB051E003051A7 /* ViewController.swift in Sources */,
+				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
+				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E628528DB051E003051A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E628E28DB051E003051A7 /* Swift_App_Duciel_PicartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0E628F28DB051E003051A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E629828DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift in Sources */,
+				EC0E629A28DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC0E628B28DB051E003051A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0E627228DB051E003051A7 /* Swift_App_Duciel_Picart */;
+			targetProxy = EC0E628A28DB051E003051A7 /* PBXContainerItemProxy */;
+		};
+		EC0E629528DB051E003051A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0E627228DB051E003051A7 /* Swift_App_Duciel_Picart */;
+			targetProxy = EC0E629428DB051E003051A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC0E627C28DB051E003051A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0E627D28DB051E003051A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0E628228DB051E003051A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC0E629B28DB051E003051A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC0E629C28DB051E003051A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC0E629E28DB051E003051A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swift_App_Duciel_Picart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-Picart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC0E629F28DB051E003051A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swift_App_Duciel_Picart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-Picart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC0E62A128DB051E003051A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-PicartTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_App_Duciel_Picart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift_App_Duciel_Picart";
+			};
+			name = Debug;
+		};
+		EC0E62A228DB051E003051A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-PicartTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_App_Duciel_Picart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift_App_Duciel_Picart";
+			};
+			name = Release;
+		};
+		EC0E62A428DB051E003051A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-PicartUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swift_App_Duciel_Picart;
+			};
+			name = Debug;
+		};
+		EC0E62A528DB051E003051A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.Swift-App-Duciel-PicartUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swift_App_Duciel_Picart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC0E626E28DB051E003051A7 /* Build configuration list for PBXProject "Swift_App_Duciel_Picart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0E629B28DB051E003051A7 /* Debug */,
+				EC0E629C28DB051E003051A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0E629D28DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_Picart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0E629E28DB051E003051A7 /* Debug */,
+				EC0E629F28DB051E003051A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0E62A028DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_PicartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0E62A128DB051E003051A7 /* Debug */,
+				EC0E62A228DB051E003051A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0E62A328DB051E003051A7 /* Build configuration list for PBXNativeTarget "Swift_App_Duciel_PicartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0E62A428DB051E003051A7 /* Debug */,
+				EC0E62A528DB051E003051A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC0E626B28DB051E003051A7 /* Project object */;
+}
