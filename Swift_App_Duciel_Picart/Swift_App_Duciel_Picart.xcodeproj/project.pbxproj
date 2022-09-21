@@ -21,6 +21,8 @@
 		EC0E62B228DB4289003051A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62B128DB4289003051A7 /* FirebaseStorage */; };
 		EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */; };
 		EC0E62BC28DB542F003051A7 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BB28DB542F003051A7 /* 1024.png */; };
+		EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E62BD28DB5866003051A7 /* SignUpController.swift */; };
+		EC0E62C028DB5894003051A7 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BF28DB5894003051A7 /* ic_launcher.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC0E62BB28DB542F003051A7 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1024.png; path = ../../../../Downloads/AppIcons/Assets.xcassets/AppIcon.appiconset/1024.png; sourceTree = "<group>"; };
+		EC0E62BD28DB5866003051A7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		EC0E62BF28DB5894003051A7 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		EC0E627528DB051E003051A7 /* Swift_App_Duciel_Picart */ = {
 			isa = PBXGroup;
 			children = (
+				EC0E62BF28DB5894003051A7 /* ic_launcher.png */,
 				EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */,
 				EC0E627628DB051E003051A7 /* AppDelegate.swift */,
 				EC0E627828DB051E003051A7 /* SceneDelegate.swift */,
@@ -118,6 +123,7 @@
 				EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */,
 				EC0E628428DB051E003051A7 /* Info.plist */,
 				EC0E62BB28DB542F003051A7 /* 1024.png */,
+				EC0E62BD28DB5866003051A7 /* SignUpController.swift */,
 			);
 			path = Swift_App_Duciel_Picart;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0E628328DB051E003051A7 /* LaunchScreen.storyboard in Resources */,
+				EC0E62C028DB5894003051A7 /* ic_launcher.png in Resources */,
 				EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */,
 				EC0E62BC28DB542F003051A7 /* 1024.png in Resources */,
 				EC0E628028DB051E003051A7 /* Assets.xcassets in Resources */,
@@ -283,6 +290,7 @@
 				EC0E627B28DB051E003051A7 /* MainController.swift in Sources */,
 				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
 				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
+				EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
