@@ -20,8 +20,8 @@ class MainController: UIViewController {
         let email: String = Mail.text ?? ""
         let password: String = Password.text ?? ""
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-          guard let strongSelf = self else { return }
-          print(strongSelf)
+            print(authResult ?? "authResult")
+            print(error ?? "error")
         }
     }
 }

@@ -21,7 +21,11 @@ class SignUpController: UIViewController {
     @IBAction func onClickSignUpButton(_ sender: Any) {
         let email: String = Mail.text ?? ""
         let password: String = Password.text ?? ""
-        Auth.auth().createUser(withEmail: email, password: password)
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) -> () in
+            print("oui")
+            print(authResult?.user.uid ?? "")
+            print(error ?? "error")
+        }
     }
     
     /*
