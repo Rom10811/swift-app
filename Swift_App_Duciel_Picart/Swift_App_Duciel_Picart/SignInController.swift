@@ -29,7 +29,7 @@ class SignInController: UIViewController {
             print(error ?? "error")
             if (authResult != nil) {
                 self?.MsgError?.isHidden = true
-                self?.localData.user = authResult?.user
+                self?.localData.user = User(uid: authResult?.user.uid ?? "")
                 let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
                 self?.show(tabBarController, sender: nil)
             }

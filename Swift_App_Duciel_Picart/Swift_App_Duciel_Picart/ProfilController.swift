@@ -11,13 +11,16 @@ import FirebaseFirestore
 
 class ProfilController: UIViewController {
 
+    @IBOutlet weak var pseudo: UITextField!
+    @IBOutlet weak var email: UILabel!
     var db : Firestore!
     var localData: LocalData = LocalData.shared()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(localData.user ?? "pas user")
+        pseudo.text = localData.user?.pseudo
+        email.text = localData.user?.mail
         // Do any additional setup after loading the view.
     }
     

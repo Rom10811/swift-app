@@ -17,6 +17,7 @@ class SignUpController: UIViewController {
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var Pseudonyme: UITextField!
     var db: Firestore!
+    var localData: LocalData = LocalData.shared()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +32,9 @@ class SignUpController: UIViewController {
             if (authResult != nil) {
                 self?.MsgError.isHidden = true
                 let pseudonyme = self?.Pseudonyme.text ?? ""
-                // Add a new document with a generated ID
-                self?.db.collection("users").document(authResult?.user.uid ?? "").setData([
-                    "pseudo": pseudonyme,
-                    "mail": email,
-                    "convs": []
-                ]) { err in
-                    if let err = err {
-                        print("Error adding document: \(err)")
-                    } else {
-                        print("Document added")
-                    }
-                }
+                let user = User(uid: authResult?.user.uid ?? "", mail: email, pseudo: pseudonyme, convs: [])
+                user.save()
+                self?.localData.user = user
                 let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
                 self?.show(tabBarController, sender: nil)
             }

@@ -14,10 +14,10 @@ class LocalData {
         return localData
     }()
     
-    var user: Any?
+    var user: User?
     
     private init() {
-        self.user = nil
+        user = nil
     }
     
     class func shared() -> LocalData {

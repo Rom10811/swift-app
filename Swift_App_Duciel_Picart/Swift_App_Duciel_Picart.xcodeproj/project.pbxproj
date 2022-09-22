@@ -25,6 +25,7 @@
 		EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847728DC45AD00824D26 /* ProfilController.swift */; };
 		EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847928DC8EAB00824D26 /* LocalData.swift */; };
 		EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847B28DC9ED400824D26 /* TabBarController.swift */; };
+		EC9C847F28DCAD1700824D26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847E28DCAD1700824D26 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EC9C847728DC45AD00824D26 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		EC9C847928DC8EAB00824D26 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		EC9C847B28DC9ED400824D26 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EC9C847E28DCAD1700824D26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		EC0E627528DB051E003051A7 /* Swift_App_Duciel_Picart */ = {
 			isa = PBXGroup;
 			children = (
+				EC9C847D28DCACEA00824D26 /* Model */,
 				EC0E62BF28DB5894003051A7 /* ic_launcher.png */,
 				EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */,
 				EC0E627628DB051E003051A7 /* AppDelegate.swift */,
@@ -149,6 +152,14 @@
 				EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */,
 			);
 			path = Swift_App_Duciel_PicartUITests;
+			sourceTree = "<group>";
+		};
+		EC9C847D28DCACEA00824D26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC9C847E28DCAD1700824D26 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
 				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
 				EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */,
+				EC9C847F28DCAD1700824D26 /* User.swift in Sources */,
 				EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */,
 				EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */,
 				EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */,
