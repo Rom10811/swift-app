@@ -111,39 +111,106 @@
             </objects>
             <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="Wbk-sp-zek">
+        <!--Conversations-->
+        <scene sceneID="8UM-1R-7jU">
             <objects>
-                <viewController storyboardIdentifier="MainController" title="Main" id="AFm-nt-NEB" customClass="MainController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="laC-AN-2DA">
+                <tableViewController id="cqa-bm-oUH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fjT-gg-Ech">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qy5-tH-9al">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qy5-tH-9al" id="LPv-6a-Muh">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cqa-bm-oUH" id="PWR-Va-QEQ"/>
+                            <outlet property="delegate" destination="cqa-bm-oUH" id="POi-5h-tGh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Conversations" id="HF0-NJ-Lvm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyV-f6-Opb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="2148"/>
+        </scene>
+        <!--Conversation-->
+        <scene sceneID="sJf-dR-dem">
+            <objects>
+                <navigationController id="nca-16-gdP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Conversation" image="message.fill" catalog="system" id="aJM-hN-C9I"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gq-vO-YMm">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cqa-bm-oUH" kind="relationship" relationship="rootViewController" id="JWD-xg-YXX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dg7-zS-Kjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362" y="1410"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="ZAa-Ca-GEV">
+            <objects>
+                <viewController storyboardIdentifier="MainController" id="sDB-UT-hgC" customClass="ProfilController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCf-QI-8It">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dau-AG-xMg">
-                                <rect key="frame" x="122" y="700" width="147" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aq-yK-RET">
+                                <rect key="frame" x="122" y="661" width="147" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Se Déconnecter"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Se Déconnecter"/>
                                 <connections>
-                                    <action selector="onClickSignOutButton:" destination="AFm-nt-NEB" eventType="touchUpInside" id="sSs-a5-ZDc"/>
+                                    <action selector="onClickSignOutButton:" destination="sDB-UT-hgC" eventType="touchUpInside" id="Xfl-mD-Yhj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="mWb-ig-pE8"/>
+                        <viewLayoutGuide key="safeArea" id="9nB-B7-TVG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dau-AG-xMg" firstAttribute="centerX" secondItem="laC-AN-2DA" secondAttribute="centerX" id="1pk-fT-HF8"/>
-                            <constraint firstItem="dau-AG-xMg" firstAttribute="leading" secondItem="mWb-ig-pE8" secondAttribute="leading" constant="122" id="AmY-cg-1la"/>
-                            <constraint firstItem="dau-AG-xMg" firstAttribute="top" secondItem="mWb-ig-pE8" secondAttribute="top" constant="653" id="q4I-xG-baZ"/>
+                            <constraint firstItem="7aq-yK-RET" firstAttribute="leading" secondItem="9nB-B7-TVG" secondAttribute="leading" constant="122" id="LIT-xP-Wje"/>
+                            <constraint firstItem="7aq-yK-RET" firstAttribute="top" secondItem="9nB-B7-TVG" secondAttribute="top" constant="614" id="NJb-ux-mB1"/>
+                            <constraint firstItem="7aq-yK-RET" firstAttribute="centerX" secondItem="WCf-QI-8It" secondAttribute="centerX" id="iYy-bU-wQg"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" id="hz6-HA-tsY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sDy-l5-dIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywa-qS-Ftc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="650"/>
+            <point key="canvasLocation" x="615" y="1410"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9t2-CJ-zzd">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="H8E-Pv-PRt" customClass="TabBarController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Lt-hA-D13">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nca-16-gdP" kind="relationship" relationship="viewControllers" id="XEV-no-UEC"/>
+                        <segue destination="sDB-UT-hgC" kind="relationship" relationship="viewControllers" id="LkK-r1-D4X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyy-jN-jKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="672"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qmj-dj-iAs">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEG-fM-W53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="NJc-Ii-b9h" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oaJ-cy-khQ">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -153,7 +220,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AdR-As-hKN"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hEG-fM-W53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-725" y="-2"/>
         </scene>
@@ -264,6 +330,8 @@
     </scenes>
     <resources>
         <image name="ic_launcher.png" width="192" height="192"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

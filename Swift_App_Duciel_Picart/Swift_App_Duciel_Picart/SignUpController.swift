@@ -43,10 +43,8 @@ class SignUpController: UIViewController {
                         print("Document added")
                     }
                 }
-                //let mainController = self?.storyboard?.instantiateViewController(withIdentifier: "MainController") ?? MainController()
-                let mainController = MainController()
-                mainController.user = authResult?.user
-                self?.show(mainController, sender: nil)
+                let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
+                self?.show(tabBarController, sender: nil)
             }
             else {
                 self?.MsgError.isHidden = false

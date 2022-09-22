@@ -14,18 +14,11 @@ class SignInController: UIViewController {
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var MsgError: UILabel!
     
-    var user : Any!
+    var localData: LocalData = LocalData.shared()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "show" {
-            let controller = segue.destination as! MainController
-            controller.user = self.user
-        }
     }
     
     @IBAction func onClickSignInButton(_ sender: Any) {
@@ -36,9 +29,9 @@ class SignInController: UIViewController {
             print(error ?? "error")
             if (authResult != nil) {
                 self?.MsgError?.isHidden = true
-                self?.user = authResult?.user
-                let mainController = self?.storyboard?.instantiateViewController(withIdentifier: "MainController") ?? MainController()
-                self?.show(mainController, sender: nil)
+                self?.localData.user = authResult?.user
+                let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
+                self?.show(tabBarController, sender: nil)
             }
             else {
                 self?.MsgError?.isHidden = false

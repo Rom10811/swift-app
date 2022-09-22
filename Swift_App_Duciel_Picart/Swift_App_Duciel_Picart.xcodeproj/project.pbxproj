@@ -20,10 +20,11 @@
 		EC0E62B028DB4289003051A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62AF28DB4289003051A7 /* FirebaseFirestore */; };
 		EC0E62B228DB4289003051A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC0E62B128DB4289003051A7 /* FirebaseStorage */; };
 		EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */; };
-		EC0E62BC28DB542F003051A7 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BB28DB542F003051A7 /* 1024.png */; };
 		EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E62BD28DB5866003051A7 /* SignUpController.swift */; };
 		EC0E62C028DB5894003051A7 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BF28DB5894003051A7 /* ic_launcher.png */; };
-		EC9C847828DC45AD00824D26 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847728DC45AD00824D26 /* MainController.swift */; };
+		EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847728DC45AD00824D26 /* ProfilController.swift */; };
+		EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847928DC8EAB00824D26 /* LocalData.swift */; };
+		EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847B28DC9ED400824D26 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +59,11 @@
 		EC0E629728DB051E003051A7 /* Swift_App_Duciel_PicartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITests.swift; sourceTree = "<group>"; };
 		EC0E629928DB051E003051A7 /* Swift_App_Duciel_PicartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_App_Duciel_PicartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EC0E62BB28DB542F003051A7 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1024.png; path = ../../../../Downloads/AppIcons/Assets.xcassets/AppIcon.appiconset/1024.png; sourceTree = "<group>"; };
 		EC0E62BD28DB5866003051A7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		EC0E62BF28DB5894003051A7 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		EC9C847728DC45AD00824D26 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		EC9C847728DC45AD00824D26 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		EC9C847928DC8EAB00824D26 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		EC9C847B28DC9ED400824D26 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +126,10 @@
 				EC0E627F28DB051E003051A7 /* Assets.xcassets */,
 				EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */,
 				EC0E628428DB051E003051A7 /* Info.plist */,
-				EC0E62BB28DB542F003051A7 /* 1024.png */,
 				EC0E62BD28DB5866003051A7 /* SignUpController.swift */,
-				EC9C847728DC45AD00824D26 /* MainController.swift */,
+				EC9C847728DC45AD00824D26 /* ProfilController.swift */,
+				EC9C847928DC8EAB00824D26 /* LocalData.swift */,
+				EC9C847B28DC9ED400824D26 /* TabBarController.swift */,
 			);
 			path = Swift_App_Duciel_Picart;
 			sourceTree = "<group>";
@@ -263,7 +266,6 @@
 				EC0E628328DB051E003051A7 /* LaunchScreen.storyboard in Resources */,
 				EC0E62C028DB5894003051A7 /* ic_launcher.png in Resources */,
 				EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */,
-				EC0E62BC28DB542F003051A7 /* 1024.png in Resources */,
 				EC0E628028DB051E003051A7 /* Assets.xcassets in Resources */,
 				EC0E627E28DB051E003051A7 /* Main.storyboard in Resources */,
 			);
@@ -293,8 +295,10 @@
 				EC0E627B28DB051E003051A7 /* SignInController.swift in Sources */,
 				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
 				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
+				EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */,
+				EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */,
 				EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */,
-				EC9C847828DC45AD00824D26 /* MainController.swift in Sources */,
+				EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +478,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swift_App_Duciel_Picart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Chat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -502,6 +508,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swift_App_Duciel_Picart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Chat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
