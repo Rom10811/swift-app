@@ -32,7 +32,7 @@ class SignUpController: UIViewController {
             if (authResult != nil) {
                 self?.MsgError.isHidden = true
                 let pseudonyme = self?.Pseudonyme.text ?? ""
-                let user = User(uid: authResult?.user.uid ?? "", mail: email, pseudo: pseudonyme, convs: [])
+                let user = User(uid: authResult?.user.uid ?? "", mail: email, pseudo: pseudonyme)
                 user.save()
                 self?.localData.user = user
                 let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()

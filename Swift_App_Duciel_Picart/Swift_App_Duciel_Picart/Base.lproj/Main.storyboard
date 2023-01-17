@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -138,7 +139,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyV-f6-Opb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="2148"/>
+            <point key="canvasLocation" x="-726" y="2148"/>
         </scene>
         <!--Conversations-->
         <scene sceneID="sJf-dR-dem">
@@ -155,83 +156,96 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg7-zS-Kjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="1410"/>
+            <point key="canvasLocation" x="-726" y="1410"/>
         </scene>
-        <!--Profil-->
+        <!--Map-->
         <scene sceneID="ZAa-Ca-GEV">
             <objects>
-                <viewController storyboardIdentifier="MainController" id="sDB-UT-hgC" customClass="ProfilController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="sDB-UT-hgC" customClass="MapController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WCf-QI-8It">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aq-yK-RET">
-                                <rect key="frame" x="122" y="657" width="147" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Se Déconnecter"/>
-                                <connections>
-                                    <action selector="onClickSignOutButton:" destination="sDB-UT-hgC" eventType="touchUpInside" id="Xfl-mD-Yhj"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qmh-c5-gSn">
-                                <rect key="frame" x="75" y="138" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129.33333333333331" id="gET-a3-zRW"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCY-Vp-Mt3">
-                                <rect key="frame" x="170" y="328" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pseudo :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-LH-7fw">
-                                <rect key="frame" x="162" y="426" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tj1-qL-PtL">
-                                <rect key="frame" x="147" y="455" width="97" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4i-SO-Q85">
-                                <rect key="frame" x="167" y="357" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S21-Jq-H2I">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9nB-B7-TVG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Tj1-qL-PtL" firstAttribute="centerX" secondItem="7aq-yK-RET" secondAttribute="centerX" id="57d-pK-3je"/>
-                            <constraint firstItem="KCY-Vp-Mt3" firstAttribute="top" secondItem="qmh-c5-gSn" secondAttribute="bottom" constant="61.666666666666686" id="594-a1-6iF"/>
-                            <constraint firstItem="qmh-c5-gSn" firstAttribute="leading" secondItem="9nB-B7-TVG" secondAttribute="leading" constant="75" id="5C6-YN-98x"/>
-                            <constraint firstItem="amQ-LH-7fw" firstAttribute="top" secondItem="A4i-SO-Q85" secondAttribute="bottom" constant="48" id="HTc-c9-etp"/>
-                            <constraint firstItem="A4i-SO-Q85" firstAttribute="top" secondItem="KCY-Vp-Mt3" secondAttribute="bottom" constant="8" id="Ihq-eb-QWh"/>
-                            <constraint firstItem="7aq-yK-RET" firstAttribute="leading" secondItem="9nB-B7-TVG" secondAttribute="leading" constant="122" id="LIT-xP-Wje"/>
-                            <constraint firstItem="Tj1-qL-PtL" firstAttribute="leading" secondItem="9nB-B7-TVG" secondAttribute="leading" constant="147" id="N8L-fZ-mOc"/>
-                            <constraint firstItem="7aq-yK-RET" firstAttribute="top" secondItem="9nB-B7-TVG" secondAttribute="top" constant="610" id="NJb-ux-mB1"/>
-                            <constraint firstItem="Tj1-qL-PtL" firstAttribute="top" secondItem="amQ-LH-7fw" secondAttribute="bottom" constant="8" id="Qfx-FO-Clb"/>
-                            <constraint firstItem="KCY-Vp-Mt3" firstAttribute="centerX" secondItem="A4i-SO-Q85" secondAttribute="centerX" id="UO6-OC-ZYq"/>
-                            <constraint firstItem="qmh-c5-gSn" firstAttribute="centerX" secondItem="KCY-Vp-Mt3" secondAttribute="centerX" id="Y5k-3n-xjd"/>
-                            <constraint firstItem="A4i-SO-Q85" firstAttribute="centerX" secondItem="amQ-LH-7fw" secondAttribute="centerX" id="gda-Ns-RmS"/>
-                            <constraint firstItem="7aq-yK-RET" firstAttribute="centerX" secondItem="WCf-QI-8It" secondAttribute="centerX" id="iYy-bU-wQg"/>
-                            <constraint firstItem="qmh-c5-gSn" firstAttribute="top" secondItem="9nB-B7-TVG" secondAttribute="top" constant="90" id="x7i-7v-wRj"/>
-                            <constraint firstItem="amQ-LH-7fw" firstAttribute="centerX" secondItem="Tj1-qL-PtL" secondAttribute="centerX" id="xd7-WQ-YIT"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" id="hz6-HA-tsY"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" id="hz6-HA-tsY"/>
                     <connections>
-                        <outlet property="email" destination="A4i-SO-Q85" id="VHg-ul-EGd"/>
-                        <outlet property="pseudo" destination="Tj1-qL-PtL" id="aCd-Sv-NlQ"/>
+                        <outlet property="map" destination="S21-Jq-H2I" id="RYN-yy-j3J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywa-qS-Ftc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="1410"/>
+            <point key="canvasLocation" x="57" y="1410"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="D87-Mf-pyR">
+            <objects>
+                <viewController id="SQ2-Yf-Blt" customClass="ProfilController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NC5-4U-DRs">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-nA-GdZ">
+                                <rect key="frame" x="170" y="334" width="50" height="20.999999999999773"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pseudo :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM2-B8-vDz">
+                                <rect key="frame" x="162" y="412" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqN-M5-dnD">
+                                <rect key="frame" x="174" y="363" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8c-uo-xew">
+                                <rect key="frame" x="174" y="441" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-SO-G4o">
+                                <rect key="frame" x="75" y="125.99999999999909" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj8-1z-wYr">
+                                <rect key="frame" x="122" y="652" width="147" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Se Déconnecter"/>
+                                <connections>
+                                    <action selector="onClickSignOutButton:" destination="SQ2-Yf-Blt" eventType="touchUpInside" id="D28-t1-wtG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0i5-AV-HMO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" id="o9o-Ue-LtJ"/>
+                    <connections>
+                        <outlet property="email" destination="rqN-M5-dnD" id="g1L-Ie-WAF"/>
+                        <outlet property="pseudo" destination="m8c-uo-xew" id="Sjl-Lf-8x1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdJ-45-zaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="1410"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9t2-CJ-zzd">
@@ -246,6 +260,7 @@
                     <connections>
                         <segue destination="nca-16-gdP" kind="relationship" relationship="viewControllers" id="XEV-no-UEC"/>
                         <segue destination="sDB-UT-hgC" kind="relationship" relationship="viewControllers" id="LkK-r1-D4X"/>
+                        <segue destination="SQ2-Yf-Blt" kind="relationship" relationship="viewControllers" id="ENo-so-p6v"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyy-jN-jKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -255,7 +270,6 @@
         <!--Navigation Controller-->
         <scene sceneID="qmj-dj-iAs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hEG-fM-W53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="NJc-Ii-b9h" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oaJ-cy-khQ">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -265,6 +279,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AdR-As-hKN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEG-fM-W53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-725" y="-2"/>
         </scene>
@@ -370,12 +385,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hG-Sz-cCo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781.53846153846155" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="823" y="-2"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.49543112516403198" green="0.65953177213668823" blue="0.91892200708389282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="ic_launcher.png" width="192" height="192"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

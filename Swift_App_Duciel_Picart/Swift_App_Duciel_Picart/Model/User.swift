@@ -11,13 +11,11 @@ import FirebaseFirestore
 class User {
     private static var mailProperty: String = "mail"
     private static var pseudoProperty: String = "pseudo"
-    private static var convsProperty: String = "convs"
     
     
     private var _uid: String
     private var _mail: String
     private var _pseudo: String
-    private var _convs: [String]
     
     private var db: Firestore
     
@@ -30,15 +28,11 @@ class User {
     var pseudo: String {
         get { return _pseudo }
     }
-    var convs: [String] {
-        get { return _convs }
-    }
     
-    init(uid: String, mail: String, pseudo: String, convs: [String]) {
+    init(uid: String, mail: String, pseudo: String) {
         self._uid = uid
         self._mail = mail
         self._pseudo = pseudo
-        self._convs = convs
         self.db = Firestore.firestore()
     }
     
@@ -47,7 +41,6 @@ class User {
         self._uid = uid
         self._mail = ""
         self._pseudo = ""
-        self._convs = []
         if (uid != "") {
             // TODO fetch firestore
         }
@@ -56,8 +49,7 @@ class User {
     func save() -> Void {
         db.collection("users").document(_uid).setData([
             User.mailProperty: _mail,
-            User.pseudoProperty: _pseudo,
-            User.convsProperty: _convs
+            User.pseudoProperty: _pseudo
         ])
     }
 }

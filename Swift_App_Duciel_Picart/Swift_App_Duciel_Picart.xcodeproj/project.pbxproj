@@ -22,7 +22,8 @@
 		EC0E62B428DB4AA0003051A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */; };
 		EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E62BD28DB5866003051A7 /* SignUpController.swift */; };
 		EC0E62C028DB5894003051A7 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0E62BF28DB5894003051A7 /* ic_launcher.png */; };
-		EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847728DC45AD00824D26 /* ProfilController.swift */; };
+		EC6697C12976B24E006E1AA6 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6697C02976B24E006E1AA6 /* ProfilController.swift */; };
+		EC9C847828DC45AD00824D26 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847728DC45AD00824D26 /* MapController.swift */; };
 		EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847928DC8EAB00824D26 /* LocalData.swift */; };
 		EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847B28DC9ED400824D26 /* TabBarController.swift */; };
 		EC9C847F28DCAD1700824D26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847E28DCAD1700824D26 /* User.swift */; };
@@ -62,7 +63,8 @@
 		EC0E62B328DB4AA0003051A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC0E62BD28DB5866003051A7 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		EC0E62BF28DB5894003051A7 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		EC9C847728DC45AD00824D26 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		EC6697C02976B24E006E1AA6 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		EC9C847728DC45AD00824D26 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		EC9C847928DC8EAB00824D26 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		EC9C847B28DC9ED400824D26 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC9C847E28DCAD1700824D26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -130,9 +132,10 @@
 				EC0E628128DB051E003051A7 /* LaunchScreen.storyboard */,
 				EC0E628428DB051E003051A7 /* Info.plist */,
 				EC0E62BD28DB5866003051A7 /* SignUpController.swift */,
-				EC9C847728DC45AD00824D26 /* ProfilController.swift */,
+				EC9C847728DC45AD00824D26 /* MapController.swift */,
 				EC9C847928DC8EAB00824D26 /* LocalData.swift */,
 				EC9C847B28DC9ED400824D26 /* TabBarController.swift */,
+				EC6697C02976B24E006E1AA6 /* ProfilController.swift */,
 			);
 			path = Swift_App_Duciel_Picart;
 			sourceTree = "<group>";
@@ -304,13 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0E627B28DB051E003051A7 /* SignInController.swift in Sources */,
+				EC6697C12976B24E006E1AA6 /* ProfilController.swift in Sources */,
 				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
 				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
 				EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */,
 				EC9C847F28DCAD1700824D26 /* User.swift in Sources */,
 				EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */,
 				EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */,
-				EC9C847828DC45AD00824D26 /* ProfilController.swift in Sources */,
+				EC9C847828DC45AD00824D26 /* MapController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
