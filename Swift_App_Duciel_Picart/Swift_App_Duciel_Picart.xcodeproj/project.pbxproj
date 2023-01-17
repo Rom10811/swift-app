@@ -27,6 +27,9 @@
 		EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847928DC8EAB00824D26 /* LocalData.swift */; };
 		EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847B28DC9ED400824D26 /* TabBarController.swift */; };
 		EC9C847F28DCAD1700824D26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C847E28DCAD1700824D26 /* User.swift */; };
+		ECBCFBC82976E4B400C7B7C4 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCFBC72976E4B400C7B7C4 /* UserCell.swift */; };
+		ECBCFBCA2976E4E400C7B7C4 /* MembresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCFBC92976E4E400C7B7C4 /* MembresController.swift */; };
+		ECBCFBCC2976E51200C7B7C4 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCFBCB2976E51200C7B7C4 /* FirebaseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		EC9C847928DC8EAB00824D26 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		EC9C847B28DC9ED400824D26 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC9C847E28DCAD1700824D26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ECBCFBC72976E4B400C7B7C4 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ECBCFBC92976E4E400C7B7C4 /* MembresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembresController.swift; sourceTree = "<group>"; };
+		ECBCFBCB2976E51200C7B7C4 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 				EC9C847928DC8EAB00824D26 /* LocalData.swift */,
 				EC9C847B28DC9ED400824D26 /* TabBarController.swift */,
 				EC6697C02976B24E006E1AA6 /* ProfilController.swift */,
+				ECBCFBC72976E4B400C7B7C4 /* UserCell.swift */,
+				ECBCFBC92976E4E400C7B7C4 /* MembresController.swift */,
+				ECBCFBCB2976E51200C7B7C4 /* FirebaseData.swift */,
 			);
 			path = Swift_App_Duciel_Picart;
 			sourceTree = "<group>";
@@ -306,13 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBCFBCC2976E51200C7B7C4 /* FirebaseData.swift in Sources */,
 				EC0E627B28DB051E003051A7 /* SignInController.swift in Sources */,
+				ECBCFBCA2976E4E400C7B7C4 /* MembresController.swift in Sources */,
 				EC6697C12976B24E006E1AA6 /* ProfilController.swift in Sources */,
 				EC0E627728DB051E003051A7 /* AppDelegate.swift in Sources */,
 				EC0E627928DB051E003051A7 /* SceneDelegate.swift in Sources */,
 				EC9C847A28DC8EAB00824D26 /* LocalData.swift in Sources */,
 				EC9C847F28DCAD1700824D26 /* User.swift in Sources */,
 				EC9C847C28DC9ED400824D26 /* TabBarController.swift in Sources */,
+				ECBCFBC82976E4B400C7B7C4 /* UserCell.swift in Sources */,
 				EC0E62BE28DB5866003051A7 /* SignUpController.swift in Sources */,
 				EC9C847828DC45AD00824D26 /* MapController.swift in Sources */,
 			);

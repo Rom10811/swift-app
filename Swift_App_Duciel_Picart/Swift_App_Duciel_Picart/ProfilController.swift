@@ -18,7 +18,7 @@ class ProfilController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(localData.user?.mail)
         pseudo.text = localData.user?.pseudo
         email.text = localData.user?.mail
     }

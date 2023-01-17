@@ -11,6 +11,7 @@ import FirebaseFirestore
 class User {
     private static var mailProperty: String = "mail"
     private static var pseudoProperty: String = "pseudo"
+    private static var uidProperty: String = "uid"
     
     
     private var _uid: String
@@ -42,14 +43,24 @@ class User {
         self._mail = ""
         self._pseudo = ""
         if (uid != "") {
-            // TODO fetch firestore
+            let userRef = db.collection("users").document(uid)
+            userRef.getDocument{
+                (document, error) in
+                if let document = document, document.exists {
+                    let data = document.data()
+                    self._pseudo = document.get("pseudo") as! String
+                    self._mail = document.get("mail") as! String
+                }
+            }
+            // TODO fetch firese
         }
     }
     
     func save() -> Void {
         db.collection("users").document(_uid).setData([
             User.mailProperty: _mail,
-            User.pseudoProperty: _pseudo
+            User.pseudoProperty: _pseudo,
+            User.uidProperty: _uid
         ])
     }
 }

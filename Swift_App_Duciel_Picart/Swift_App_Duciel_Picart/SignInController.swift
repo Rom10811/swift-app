@@ -26,10 +26,11 @@ class SignInController: UIViewController {
         let password: String = Password.text ?? ""
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             print(authResult ?? "authResult")
-            print(error ?? "error")
             if (authResult != nil) {
                 self?.MsgError?.isHidden = true
+                print(authResult?.user.uid)
                 self?.localData.user = User(uid: authResult?.user.uid ?? "")
+                print(self?.localData.user?.mail)
                 let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
                 self?.show(tabBarController, sender: nil)
             }

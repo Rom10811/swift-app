@@ -112,16 +112,16 @@
             </objects>
             <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
         </scene>
-        <!--Conversations-->
+        <!--Membres-->
         <scene sceneID="8UM-1R-7jU">
             <objects>
-                <tableViewController id="cqa-bm-oUH" sceneMemberID="viewController">
+                <tableViewController title="Membres" id="cqa-bm-oUH" customClass="MembresController" customModule="Swift_App_Duciel_Picart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fjT-gg-Ech">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qy5-tH-9al">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="Qy5-tH-9al" customClass="UserCell" customModule="Swift_App_Duciel_Picart" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qy5-tH-9al" id="LPv-6a-Muh">
@@ -135,17 +135,17 @@
                             <outlet property="delegate" destination="cqa-bm-oUH" id="POi-5h-tGh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Conversations" id="HF0-NJ-Lvm"/>
+                    <navigationItem key="navigationItem" title="Membre" id="HF0-NJ-Lvm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyV-f6-Opb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-726" y="2148"/>
         </scene>
-        <!--Conversations-->
+        <!--Membres-->
         <scene sceneID="sJf-dR-dem">
             <objects>
-                <navigationController id="nca-16-gdP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Conversations" image="message.fill" catalog="system" id="aJM-hN-C9I"/>
+                <navigationController title="Membres" id="nca-16-gdP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Membres" image="person.2.fill" catalog="system" id="aJM-hN-C9I"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gq-vO-YMm">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -206,8 +206,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqN-M5-dnD">
-                                <rect key="frame" x="174" y="363" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqN-M5-dnD">
+                                <rect key="frame" x="75" y="363" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdJ-45-zaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="1410"/>
+            <point key="canvasLocation" x="821.53846153846155" y="1409.7156398104264"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9t2-CJ-zzd">
@@ -392,7 +392,7 @@
     <resources>
         <image name="ic_launcher.png" width="192" height="192"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
-        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
