@@ -213,13 +213,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8c-uo-xew">
-                                <rect key="frame" x="174" y="441" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-SO-G4o">
                                 <rect key="frame" x="75" y="125.99999999999909" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -233,6 +226,13 @@
                                     <action selector="onClickSignOutButton:" destination="SQ2-Yf-Blt" eventType="touchUpInside" id="D28-t1-wtG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8c-uo-xew">
+                                <rect key="frame" x="74" y="441" width="242" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0i5-AV-HMO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -291,17 +291,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-vj-aQl">
-                                <rect key="frame" x="117" y="542" width="156" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="nwc-cr-K5j"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="S'Incrire"/>
-                                <connections>
-                                    <action selector="onClickSignUpButton:" destination="4UA-AI-LxQ" eventType="touchUpInside" id="y0q-er-xja"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-e7-XBm">
                                 <rect key="frame" x="102" y="387" width="186" height="34"/>
                                 <constraints>
@@ -321,8 +310,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTB-QN-hSI">
                                 <rect key="frame" x="75" y="140" width="240" height="128"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse mail ou mot de passe incorect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-Pk-KhC">
-                                <rect key="frame" x="22" y="482" width="346" height="52"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Une Erreur est survenue lors de  la création du compte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-Pk-KhC">
+                                <rect key="frame" x="22" y="482" width="346" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -344,6 +333,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="nickname"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-vj-aQl">
+                                <rect key="frame" x="117" y="562" width="156" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="nwc-cr-K5j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="S'Incrire"/>
+                                <connections>
+                                    <action selector="onClickSignUpButton:" destination="4UA-AI-LxQ" eventType="touchUpInside" id="y0q-er-xja"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YlF-qg-Sws"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -385,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hG-Sz-cCo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="-2"/>
+            <point key="canvasLocation" x="821.53846153846155" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.49543112516403198" green="0.65953177213668823" blue="0.91892200708389282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

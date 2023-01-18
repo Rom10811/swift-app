@@ -35,6 +35,9 @@ class SignUpController: UIViewController {
                 let user = User(uid: authResult?.user.uid ?? "", mail: email, pseudo: pseudonyme)
                 user.save()
                 self?.localData.user = user
+                self?.Mail.text = ""
+                self?.Password.text = ""
+                self?.Pseudonyme.text = ""
                 let tabBarController = self?.storyboard?.instantiateViewController(withIdentifier: "TabBarController") ?? TabBarController()
                 self?.show(tabBarController, sender: nil)
             }

@@ -23,8 +23,6 @@ class MembresController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-        print(users[indexPath.row].pseudo)
         let center = UNUserNotificationCenter.current()
         let content = UNMutableNotificationContent()
         content.title = users[indexPath.row].pseudo + " Informations"
